@@ -22,7 +22,7 @@ function setUpAssessment() {
     const newElement = `
     <section class="submited-section">
     <div class="image-wrapp">
-      <img src="./images/illustration-thank-you.svg" alt="" />
+      <img src="./images/illustration-thank-you.svg" alt="payment" />
     </div>
     <p class="selected-info">You selected ${result} out of ${assessmentList.length}</p>
 
