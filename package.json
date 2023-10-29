@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "sass": "^1.69.5"
+  },
+  "scripts": {
+    "watch": "npx sass --watch scss/styles.scss:output.css"
+  }
+}

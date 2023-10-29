@@ -1,0 +1,67 @@
+@import "../variables/variables.scss";
+
+.image-wrapp {
+  background-color: $dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 35px;
+}
+.assessment-item {
+  @extend .image-wrapp;
+  color: $medium-grey;
+  cursor: pointer;
+}
+.assessment-item:hover {
+  background-color: $orange-prime;
+  color: $white;
+}
+.active {
+  background-color: $light-grey;
+  color: $white;
+}
+.title {
+  color: $white;
+  font-weight: $bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: $paragraph;
+  color: $medium-grey;
+  margin-bottom: 20px;
+  line-height: 21px;
+}
+.assessment-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-submit {
+  background-color: $orange-prime;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  color: $white;
+  padding: 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: $bold;
+}
+.btn-submit:hover {
+  background-color: $white;
+  color: $orange-prime;
+}
+
+@media screen and (max-width: 375px) {
+  .description {
+    max-width: 290px;
+  }
+}
